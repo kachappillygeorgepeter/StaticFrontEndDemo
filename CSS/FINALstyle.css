@@ -1,0 +1,86 @@
+/*
+  CSS guidelines for the Website
+
+----------Typography----------
+h1 - 8rem
+h2 - 6rem
+h3 - 4rem
+h4 - 2rem
+h5 - 1rem
+h6 - 0.5rem
+p  - 2rem
+a  - 2rem
+----------Colors----------
+Primary (BLUE)
+    Base  - 339AF0
+    Tint  - 92C9F7
+Secondary (PURPLE)
+    Base - 9775FA
+    Tint - A98EFB
+Tertiary (ORANGE)
+    Base  - FF922B
+    Tint  - FFAB5C
+Neutral (GREY)
+    Base - 44444b gunmetal grey
+    Tint - 6b6b76 mid grey
+*/
+
+/*----------Initialization of CSS Variables----------*/
+:root {
+    --primary-base: #339AF0;
+    --primary-tint: #92C9F7;
+    --secondary-base: #9775FA;
+    --secondary-tint: #A98EFB;
+    --tertiary-base: #FF922B;
+    --tertiary-tint: #FFAB5C;
+    --neutral-base: #44444b;
+    --neutral-tint: #6b6b76;
+    --white: #FFFFFF;
+    --black : #000000;
+}
+/*----------CSS Resets----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------Main Styles----------*/
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* now 1rem=10px */
+}
+header{
+    background-color: var(--primary-base);
+}
+/*main{
+}*/
+footer{
+    background-color: var(--primary-base);
+}
+h1{
+    font-size: 8rem;
+}
+h2{
+    font-size: 6rem;
+}
+h3{
+    font-size: 4rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1rem;
+}
+h6{
+    font-size: 0.5rem;
+}
+a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 2rem;
+}
+/*----------sections Styles----------*/
