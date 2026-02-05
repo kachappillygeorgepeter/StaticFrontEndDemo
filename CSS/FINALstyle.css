@@ -50,6 +50,12 @@ html{
     scroll-behavior: smooth;
     /* now 1rem=10px */
 }
+body{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 header{
     background-color: var(--white);
     position: sticky;
