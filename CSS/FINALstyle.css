@@ -34,7 +34,7 @@ Neutral (GREY)
     --tertiary-base: #FF922B;
     --tertiary-tint: #FFAB5C;
     --neutral-base: #44444b;
-    --neutral-tint: #6b6b76;
+    --neutral-tint: #dcd7d7;
     --white: #FFFFFF;
     --black : #000000;
 }
@@ -51,7 +51,7 @@ html{
     /* now 1rem=10px */
 }
 header{
-    background-color: var(--primary-base);
+    background-color: var(--white);
     position: sticky;
     top:0;
 }
@@ -94,4 +94,13 @@ a:hover {
 p{
     font-size: 2rem;
 }
+li{
+    list-style: none;
+}
 /*----------sections Styles----------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem;
+}
