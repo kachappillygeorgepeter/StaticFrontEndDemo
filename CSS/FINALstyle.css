@@ -58,8 +58,9 @@ header{
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
     
 }
-/*main{
-}*/
+main{
+    padding: 5rem;
+}
 footer{
     background-color: var(--primary-base);
 }
@@ -89,7 +90,7 @@ a:link, a:visited {
     color: var(--black);
 }
 a:hover, a:active {
-    color: var(--black);
+    color: var(--tertiary-base);
 }
 a:hover {
     font-size: 2.1rem;
@@ -112,4 +113,78 @@ nav{
     display: flex;
     justify-content: space-around;
     gap: 1.5rem;
+}
+#Welcome-section{
+    margin-bottom: 10px;
+    text-align: center;
+}
+#Welcome-section-highlight{
+    background-color: var(--primary-base);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+}
+#letter-1:hover, #letter-2:hover, #letter-3:hover, #letter-4:hover, #letter-5:hover, #letter-6:hover,#letter-7:hover,#letter-8:hover,#letter-9:hover,#letter-10:hover,
+#letter-11:hover,#letter-12:hover,#letter-13:hover,#letter-14:hover,#letter-15:hover,#letter-16:hover,#letter-17:hover,#letter-18:hover,#letter-19:hover,#letter-20:hover,
+#letter-21:hover,#letter-22:hover,#letter-23:hover,#letter-24:hover,#letter-25:hover,#letter-26:hover,#letter-27:hover,#letter-28:hover,#letter-29:hover,#letter-30:hover,
+#letter-31:hover,#letter-32:hover,#letter-33:hover,#letter-34:hover{
+
+    display: inline-block;
+    transform: rotateY(180deg);
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+#hero-grid-1{
+    order: 1;
+}
+#hero-grid-1:hover{
+    color: var(--primary-base);
+}
+#hero-grid-2{
+    order: 2;
+}
+#hero-grid-3{
+    order: 4;
+}
+#hero-grid-3:hover {
+    color: var(--secondary-base);
+}
+#hero-grid-4{
+    order: 3;
+}
+#hero-grid-5{
+    order: 5;
+}
+#hero-grid-5:hover {
+    color: var(--tertiary-base);
+}
+#hero-grid-6{
+    order: 6;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-rows: repeat(3,0.5fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.info-social-links-flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.info-startSentence{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
