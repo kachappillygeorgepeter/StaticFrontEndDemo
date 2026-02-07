@@ -2,10 +2,10 @@
   CSS guidelines for the Website
 
 ----------Typography----------
-h1 - 8rem
-h2 - 6rem
-h3 - 4rem
-h4 - 2rem
+h1 - 6rem
+h2 - 4rem
+h3 - 2rem
+h4 - 1.5rem
 h5 - 1rem
 h6 - 0.5rem
 p  - 2rem
@@ -50,6 +50,7 @@ html{
     font-size: 62.5%;
     /* now 1rem=10px */
     scroll-behavior: smooth;
+    font-family: "playwrite nz basic", sans-serif;
 }
 body{
     background-image: url('../images/background.jpg');
@@ -60,10 +61,14 @@ body{
 html:has(#theme-toggle:checked) body{
     background-image: none;
     background-color: #001433;
+    /* background-image: url("../images/dark-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
     color: var(--white);
 }
 header{
-    background-color: var(--white);
+    background-image: url('../images/header-background.jpg');
     position: sticky;
     top: 0;
     height: 6rem;
@@ -71,7 +76,7 @@ header{
     
 }
 html:has(#theme-toggle:checked) header{
-    background-color: #001433;
+    background-image: url('../images/dark-header-background.jpg');
     color: var(--white);
     box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.2);
 }
@@ -87,16 +92,16 @@ html:has(#theme-toggle:checked) footer{
     box-shadow: 0 -4px 6px -1px rgba(255, 255, 255, 0.3), 0 -2px 4px -1px rgba(255, 255, 255, 0.2);
 }
 h1{
-    font-size: 8rem;
-}
-h2{
     font-size: 6rem;
 }
-h3{
+h2{
     font-size: 4rem;
 }
-h4{
+h3{
     font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
 }
 h5{
     font-size: 1rem;
@@ -120,6 +125,10 @@ a:hover, a:active {
 }
 a:hover {
     font-size: 2.1rem;
+}
+html:has(#theme-toggle:checked) a:hover,
+html:has(#theme-toggle:checked) a:active {
+    color: var(--tertiary-base);
 }
 p{
     font-size: 2rem;
@@ -180,6 +189,7 @@ label[for="theme-toggle"]::after {
     transform: translateX(2.5rem);
 }
 #Welcome-section{
+    font-family: "Bruno Ace", serif;
     margin-bottom: 10px;
     text-align: center;
 }
