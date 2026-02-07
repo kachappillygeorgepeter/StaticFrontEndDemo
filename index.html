@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark-theme">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,33 +12,40 @@
       <nav>
         <div class="navbar-left">
           <a href="images\user_logo.png">
-            <img src="images\user_logo.png" alt="User logo" height="30" />
+            <img
+              src="images\user_logo.png"
+              alt="User logo"
+              height="30"
+              class="nav-logo"
+              id="user-logo"
+            />
           </a>
-          <img src="images\demo_logo.png" alt="Demo logo" height="30" />
+          <img
+            src="images\demo_logo.png"
+            alt="Demo logo"
+            height="30"
+            id="demo-logo"
+          />
         </div>
         <div class="navbar-right">
-          <li class="navbar-right-list1">
+          <li class="navbar-right-list">
             <ul>
-              <a href="index.html" title="Home">
-                <img
-                  class="navbar-right-logos"
-                  src="images\home_logo.png"
-                  alt="Home logo"
-                  height="30"
-                />
-                Home
-              </a>
+              <a href="index.html" title="Home">Home</a>
             </ul>
             <ul>
-              <a href="#footer" title="Contact">
-                <img
-                  class="navbar-right-logos"
-                  src="images\contacts_logo.png"
-                  alt="Contacts logo"
-                  height="30"
-                />
-                Contact
-              </a>
+              <a href="#footer" title="Contact">Contact</a>
+            </ul>
+            <ul>
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                class="navbar-right-logos"
+                title="Toggle light/dark mode"
+              />
+              <label for="theme-toggle" id="theme-toggle-label"
+                ><span id="theme-toggle-sun-icon">☀ </span
+                ><span id="theme-toggle-moon-icon">☾</span></label
+              >
             </ul>
           </li>
         </div>
@@ -120,6 +127,7 @@
                 src="images\insta_logo.png"
                 alt="Instagram logo"
                 height="20"
+                id="instagram-handle"
               />
             </a>
           </li>
@@ -134,6 +142,7 @@
                 src="images\linkedin_logo.png"
                 alt="LinkedIn logo"
                 height="20"
+                id="linkedin-handle"
               />
             </a>
           </li>
@@ -144,7 +153,12 @@
               target="_blank"
               title="GitHub handle"
             >
-              <img src="images\github_logo.png" alt="GitHub logo" height="20" />
+              <img
+                src="images\github_logo.png"
+                alt="GitHub logo"
+                height="20"
+                id="github-handle"
+              />
             </a>
           </li>
           <li>
@@ -153,7 +167,12 @@
               href="mailto:kachappillygeorgepeter@gmail.com"
               title="Gmail handle"
             >
-              <img src="images\gmail_logo.png" alt="Gmail logo" height="20" />
+              <img
+                src="images\gmail_logo.png"
+                alt="Gmail logo"
+                height="20"
+                id="gmail-handle"
+              />
             </a>
           </li>
         </ul>

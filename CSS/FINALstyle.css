@@ -46,15 +46,21 @@ Neutral (GREY)
 }
 /*----------Main Styles----------*/
 html{
+    color: var(--black);
     font-size: 62.5%;
-    scroll-behavior: smooth;
     /* now 1rem=10px */
+    scroll-behavior: smooth;
 }
 body{
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+html:has(#theme-toggle:checked) body{
+    background-image: none;
+    background-color: #001433;
+    color: var(--white);
 }
 header{
     background-color: var(--white);
@@ -64,11 +70,21 @@ header{
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
     
 }
+html:has(#theme-toggle:checked) header{
+    background-color: #001433;
+    color: var(--white);
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.2);
+}
 main{
     padding: 5rem;
 }
 footer{
     background-color: var(--primary-base);
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.3), 0 -2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+html:has(#theme-toggle:checked) footer{
+    background-color: #001433;
+    box-shadow: 0 -4px 6px -1px rgba(255, 255, 255, 0.3), 0 -2px 4px -1px rgba(255, 255, 255, 0.2);
 }
 h1{
     font-size: 8rem;
@@ -91,9 +107,13 @@ h6{
 a {
     font-size: 2rem;
     text-decoration: none;
+    cursor: pointer
 }
 a:link, a:visited {
     color: var(--black);
+}
+html:has(#theme-toggle:checked) a:link, html:has(#theme-toggle:checked) a:visited {
+    color: var(--white);
 }
 a:hover, a:active {
     color: var(--tertiary-base);
@@ -115,10 +135,51 @@ nav{
     align-items: center;
     padding: 0.25rem;
 }
-.navbar-right-list1,.navbar-left{
+.navbar-right-list,.navbar-left{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 1.5rem;
+}
+#user-logo{
+    background-color: var(--white);
+    border-radius: 50%;
+}
+#theme-toggle {
+    display: none;
+}
+label[for="theme-toggle"] {
+    background-color: var(--white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 4rem;
+    width: 6rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    gap: 1rem;
+    border: 0.15rem solid var(--black);
+    cursor: pointer;
+    position: relative;
+}
+label[for="theme-toggle"]::after {
+    content: "";
+    background-color: transparent;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--black);
+    position: absolute;
+    left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+#theme-toggle:checked + label[for="theme-toggle"] {
+    background-color: var(--neutral-base);
+    color: var(--white);
+}
+#theme-toggle:checked + label[for="theme-toggle"]::after {
+    transform: translateX(2.5rem);
 }
 #Welcome-section{
     margin-bottom: 10px;
@@ -130,9 +191,12 @@ nav{
     border-radius: 5px;
     padding: 5px;
 }
-#letter-1:hover, #letter-2:hover, #letter-3:hover, #letter-4:hover, #letter-5:hover, #letter-6:hover,#letter-7:hover,#letter-8:hover,#letter-9:hover,#letter-10:hover,
-#letter-11:hover,#letter-12:hover,#letter-13:hover,#letter-14:hover,#letter-15:hover,#letter-16:hover,#letter-17:hover,#letter-18:hover,#letter-19:hover,#letter-20:hover,
-#letter-21:hover,#letter-22:hover,#letter-23:hover,#letter-24:hover,#letter-25:hover,#letter-26:hover,#letter-27:hover,#letter-28:hover,#letter-29:hover,#letter-30:hover,
+#letter-1:hover, #letter-2:hover, #letter-3:hover, #letter-4:hover, #letter-5:hover, 
+#letter-6:hover,#letter-7:hover,#letter-8:hover,#letter-9:hover,#letter-10:hover,
+#letter-11:hover,#letter-12:hover,#letter-13:hover,#letter-14:hover,#letter-15:hover,
+#letter-16:hover,#letter-17:hover,#letter-18:hover,#letter-19:hover,#letter-20:hover,
+#letter-21:hover,#letter-22:hover,#letter-23:hover,#letter-24:hover,#letter-25:hover,
+#letter-26:hover,#letter-27:hover,#letter-28:hover,#letter-29:hover,#letter-30:hover,
 #letter-31:hover,#letter-32:hover,#letter-33:hover,#letter-34:hover{
 
     display: inline-block;
@@ -175,7 +239,6 @@ nav{
 #hero-grid-6{
     order: 6;
 }
-
 .info-grid{
     display: grid;
     grid-template-rows: repeat(3,0.5fr);
@@ -185,10 +248,19 @@ nav{
     gap: 1rem;
 }
 .info-social-links-flexbox{
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+#instagram-handle ,#linkedin-handle,#github-handle,#gmail-handle{
+    background-color: var(--white);
+    height: 2.75rem;
+    width: 2.75rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: var(--black) 0px 4px 6px -1px, var(--black) 0px 2px 4px -1px;
 }
 .info-startSentence{
     margin-top: 1.5rem;
