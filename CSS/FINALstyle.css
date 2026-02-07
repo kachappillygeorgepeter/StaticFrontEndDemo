@@ -149,27 +149,25 @@ nav{
     display: none;
 }
 label[for="theme-toggle"] {
-    background-color: var(--white);
+    background-color: var(--neutral-tint);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    height: 4rem;
+    height: 3rem;
     width: 6rem;
     border-radius: 10px;
     padding: 0.5rem;
     gap: 1rem;
-    border: 0.15rem solid var(--black);
     cursor: pointer;
     position: relative;
 }
 label[for="theme-toggle"]::after {
     content: "";
-    background-color: transparent;
+    background-color: var(--white);
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
-    border: 0.1rem solid var(--black);
     position: absolute;
     left: 0.5rem;
     transition: transform 0.3s ease;

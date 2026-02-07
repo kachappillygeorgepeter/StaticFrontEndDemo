@@ -1,0 +1,184 @@
+
+@media (max-width: 1536px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    main {
+        padding: 4rem;
+    }
+
+    .hero-grid {
+        padding: 4rem;
+        gap: 1.6rem;
+    }
+
+    
+}
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    p,
+    a {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 3.5rem;
+    }
+
+    .hero-grid {
+        padding: 3.5rem;
+        gap: 1.4rem;
+    }
+
+    .navbar-right-list1,
+    .navbar-left {
+        gap: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p,
+    a {
+        font-size: 1.6rem;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 3rem;
+        
+    }
+
+    #hero-grid-1,
+    #hero-grid-2,
+    #hero-grid-3,
+    #hero-grid-4,
+    #hero-grid-5,
+    #hero-grid-6 {
+        order: unset;
+        
+    }
+
+    
+}
+
+@media (max-width: 775px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    p,
+    a {
+        font-size: 1.5rem;
+    }
+
+    .navbar-right-list1 {
+        gap: 0.8rem;
+    }
+
+    .navbar-right-logos {
+        height: 24px;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+
+    .hero-grid {
+        padding: 2.5rem;
+    }
+
+    label[for="theme-toggle"] {
+        width: 5rem;
+        height: 3.4rem;
+        font-size: 1.6rem;
+        
+    }
+
+    
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    p,
+    a {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .navbar-right-list1,
+    .navbar-left {
+        justify-content: center;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .hero-grid {
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .info-grid {
+        gap: 0.6rem;
+    }
+
+    .info-startSentence {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
