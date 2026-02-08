@@ -133,8 +133,18 @@
 
     label[for="theme-toggle"] {
         width: 5rem;
-        height: 3.4rem;
+        height: 3.2rem;
         font-size: 1.6rem;
+    }
+
+    label[for="theme-toggle"]::after {
+        height: 2.2rem;
+        width: 2.2rem;
+        left: 0.4rem;
+    }
+
+    #theme-toggle:checked + label[for="theme-toggle"]::after {
+        transform: translateX(2.0rem);
     }
 
     #user-logo,
@@ -191,6 +201,22 @@
     .info-startSentence {
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    label[for="theme-toggle"] {
+        width: 4.6rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+
+    label[for="theme-toggle"]::after {
+        height: 2rem;
+        width: 2rem;
+        left: 0.4rem;
+    }
+
+    #theme-toggle:checked + label[for="theme-toggle"]::after {
+        transform: translateX(1.8rem);
     }
 
     #instagram-handle,
