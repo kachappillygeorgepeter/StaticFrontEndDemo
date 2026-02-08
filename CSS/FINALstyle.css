@@ -82,7 +82,7 @@ html:has(#theme-toggle:checked) header{
     box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.2);
 }
 main{
-    padding: 5rem;
+    padding: 10rem;
 }
 footer{
     background-color: var(--primary-base);

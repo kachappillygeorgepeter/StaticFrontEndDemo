@@ -1,7 +1,30 @@
-
 @media (max-width: 1536px) {
     h1 {
-        font-size: 7rem;
+        font-size: 6.4rem;
+    }
+
+    main {
+        padding: 4.5rem;
+    }
+
+    .hero-grid {
+        padding: 4.5rem;
+        gap: 1.8rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 5.6rem;
+    }
+
+    h2 {
+        font-size: 4.4rem;
+    }
+
+    p,
+    a {
+        font-size: 1.8rem;
     }
 
     main {
@@ -13,55 +36,28 @@
         gap: 1.6rem;
     }
 
-    
-}
-@media (max-width: 1280px) {
-    h1 {
-        font-size: 6rem;
-    }
-
-    h2 {
-        font-size: 5rem;
-    }
-
-    p,
-    a {
-        font-size: 1.8rem;
-    }
-
-    main {
-        padding: 3.5rem;
-    }
-
-    .hero-grid {
-        padding: 3.5rem;
-        gap: 1.4rem;
-    }
-
-    .navbar-right-list1,
+    .navbar-right-list,
     .navbar-left {
-        gap: 1rem;
+        gap: 1.2rem;
     }
-
-    
 }
 
 @media (max-width: 1024px) {
     h1 {
-        font-size: 5rem;
+        font-size: 4.8rem;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 3.6rem;
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     p,
     a {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     header {
@@ -73,14 +69,14 @@
     }
 
     main {
-        padding: 3rem;
+        padding: 3.5rem;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 3rem;
-        
+        padding: 3.5rem;
+        gap: 1.4rem;
     }
 
     #hero-grid-1,
@@ -90,15 +86,23 @@
     #hero-grid-5,
     #hero-grid-6 {
         order: unset;
-        
     }
 
-    
+    .hero-grid img {
+        width: 100%;
+        height: auto;
+        max-width: 520px;
+    }
+
+    .navbar-right-list,
+    .navbar-left {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 775px) {
     h1 {
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
 
     h2 {
@@ -107,10 +111,10 @@
 
     p,
     a {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
-    .navbar-right-list1 {
+    .navbar-right-list {
         gap: 0.8rem;
     }
 
@@ -119,26 +123,33 @@
     }
 
     main {
-        padding: 2.5rem;
+        padding: 3rem;
     }
 
     .hero-grid {
-        padding: 2.5rem;
+        padding: 3rem;
+        gap: 1.2rem;
     }
 
     label[for="theme-toggle"] {
         width: 5rem;
         height: 3.4rem;
         font-size: 1.6rem;
-        
     }
 
-    
+    #user-logo,
+    #demo-logo {
+        height: 26px;
+    }
+
+    .info-social-links-flexbox {
+        gap: 0.4rem;
+    }
 }
 
 @media (max-width: 575px) {
     h1 {
-        font-size: 3.2rem;
+        font-size: 3.4rem;
     }
 
     h2 {
@@ -151,7 +162,7 @@
 
     p,
     a {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     nav {
@@ -159,17 +170,17 @@
         gap: 0.8rem;
     }
 
-    .navbar-right-list1,
+    .navbar-right-list,
     .navbar-left {
         justify-content: center;
     }
 
     main {
-        padding: 2rem;
+        padding: 2.4rem;
     }
 
     .hero-grid {
-        padding: 2rem;
+        padding: 2.4rem;
         gap: 1rem;
     }
 
@@ -180,5 +191,14 @@
     .info-startSentence {
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    #instagram-handle,
+    #linkedin-handle,
+    #github-handle,
+    #gmail-handle {
+        height: 2.4rem;
+        width: 2.4rem;
+        padding: 0.4rem;
     }
 }
