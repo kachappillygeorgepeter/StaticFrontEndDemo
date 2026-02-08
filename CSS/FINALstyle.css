@@ -276,3 +276,10 @@ label[for="theme-toggle"]::after {
     border-radius: 50%;
     box-shadow: var(--black) 0px 4px 6px -1px, var(--black) 0px 2px 4px -1px;
 }
+#instagram-handle:hover, #linkedin-handle:hover, #github-handle:hover, #gmail-handle:hover,
+#instagram-handle:active,
+#linkedin-handle:active,
+#github-handle:active,
+#gmail-handle:active{
+    background-color: var(--tertiary-base);
+}
